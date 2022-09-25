@@ -9,11 +9,20 @@ body{
   
 }
 
+.Loading-text{
+text-align: center;
+display: flex;
+    justify-content: center;
+    margin: 211px;
+}
+
 #top{
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
 }
 
  .dark, .light{
@@ -55,7 +64,7 @@ color: hsl(0, 0%, 100%);
   height: 23px;
   margin-top: 12px;
   margin-right: 10px;
-  opacity: 40%;
+  opacity: 70%;
 }
 
 #input-search input{
@@ -76,20 +85,66 @@ border: none;
 /* appearance: none; */
 }
 
-#countries{
+
+
+article{
   display: flex;
-  width: 40%;
-  margin: 30px auto;
+  justify-content: center;
+   width: 7.9%;
+   margin: 30px auto;
+   text-align: left
+}
+article img{
+  border-radius: 4px;
 }
 
-.details{
-   padding: 20px;
-}
-
-.details h3{
+article h3{
   margin-bottom: 16px;
 }
 
-p{
+#details{
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#Country-info{
+  margin-top: 40px;
+  line-height: 3em;
+  padding: 30px;
+}
+
+.go-back{
+  display: flex;
+    width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.go-back  .imageLight-mode{
+  filter: invert(100%) sepia(0%) saturate(78485) hue-rotate(196deg) brightness(106%) contrast(100%);
+}
+
+
+.go-back h3{
+  margin-left: 10px;
+}
+
+
+.little-space{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.borders{
+  display: flex;
+  justify-content: space-around;
   text-align: left;
+    grid-gap: 3.5em;
+    margin: auto;
+}
+
+.borders div{
+  padding: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
